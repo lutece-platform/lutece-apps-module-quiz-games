@@ -8,7 +8,7 @@
 	
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>fr.paris.lutece.plugins</groupId>
-	<artifactId>module-quiz-jeuxconcours</artifactId>
+	<artifactId>module-quiz-games</artifactId>
 	<packaging>lutece-plugin</packaging>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>Lutece quiz module jeux concours</name>
@@ -38,8 +38,8 @@
     </properties>
     
     <scm>
-        <connection>scm:svn:http://dev.lutece.paris.fr/svn/lutece/portal/trunk/plugins/collaboration/module-quiz-jeuxconcours</connection>
-        <developerConnection>scm:svn:https://dev.lutece.paris.fr/svn/lutece/portal/trunk/plugins/collaboration/module-quiz-jeuxconcours</developerConnection>
-        <url>http://dev.lutece.paris.fr/viewvc/lutece/portal/trunk/plugins/collaboration/module-quiz-jeuxconcours</url>
+        <connection>scm:svn:http://dev.lutece.paris.fr/svn/lutece/portal/trunk/plugins/collaboration/module-quiz-games</connection>
+        <developerConnection>scm:svn:https://dev.lutece.paris.fr/svn/lutece/portal/trunk/plugins/collaboration/module-quiz-games</developerConnection>
+        <url>http://dev.lutece.paris.fr/viewvc/lutece/portal/trunk/plugins/collaboration/module-quiz-games</url>
     </scm>
 </project>
