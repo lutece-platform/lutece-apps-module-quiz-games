@@ -1,0 +1,50 @@
+
+    <div class="portlet -lutece-border-radius">
+
+        <center><h2>${quiz.name}</h2></center>
+
+        ${quiz.introduction}
+
+        <form name="answers" method="get" action="jsp/site/Portal.jsp">
+            <#list groups_list as group>
+            <div class="highlight-box">
+                <br/>
+                <br/>
+                <b>${group.labelGroup}</b>
+                <br/>
+                <br/>
+
+                <#if quiz.questions?has_content>
+                    <#list quiz.questions as question>
+                        <#if question.idGroup == group.idGroup>
+                            <fieldset>
+                                <div class="quiz-question">
+                                    <img src="images/local/skin/plugins/quiz/question.png"/>
+                                    ${question.questionLabel}
+                                </div>
+
+                    
+                                <div class="quiz-answers">
+                                    <#list question.answers as answer>
+                                        <#if question.idQuestion == answer.idQuestion>
+                                                <input type="radio" name="${question.idQuestion}" value="${answer.idAnswer}">${answer.labelAnswer}<br>
+                                        </#if>
+                                    </#list>
+                                </div>
+                            </fieldset>
+                        </#if>
+                </#list>
+                </#if>
+                </#list>
+                <br/>
+                <br/>
+                ${quiz.conclusion}
+                <br/>
+                <br/>
+            </div>
+            <input type="hidden" name="page" value="quiz-jeuxconcours"/>
+            <input type="hidden" name="quiz_id" value="${quiz.idQuiz}"/>
+            <input class="btn-action" type="submit" value="#i18n{quiz.view_questions_by_quiz.buttonValidate}"/>
+        </form>
+    </div>
+

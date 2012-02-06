@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?><plug-in>
+
+    <name>quiz-jeuxconcours</name>
+    <class>fr.paris.lutece.portal.service.plugin.PluginDefaultImplementation</class>
+    <version>0.0.1</version>
+    <description>module.quiz.jeuxconcours.module.description</description>
+    <documentation/>
+    <installation/>
+    <changes/>
+    <user-guide/>
+    <provider>module.quiz.jeuxconcours.module.provider</provider>
+    <provider-url>http://lutece.paris.fr</provider-url>
+    <icon-url>images/admin/skin/plugins/quiz/quiz.png</icon-url>
+    <copyright>Copyright 2001-2011 Mairie de Paris</copyright>
+    <db-pool-required>1</db-pool-required>
+
+    <!-- Applications -->
+    <applications>
+        <application>
+            <application-id>quiz-jeuxconcours</application-id>
+            <application-class>fr.paris.lutece.plugins.quiz.modules.jeuxconcours.web.RandApp</application-class>
+        </application>
+    </applications>
+    
+    <!-- Administration interface parameters -->
+    <admin-features>
+        <admin-feature>
+            <feature-id>QUIZ_MANAGEMENT_JEUXCONCOURS</feature-id>
+            <feature-title>modules.quiz.jeuxconcours.adminFeature.quiz_management.name</feature-title>
+            <feature-description>modules.quiz.jeuxconcours.adminFeature.quiz_management.description</feature-description>
+            <feature-level>3</feature-level>
+            <feature-url>jsp/admin/plugins/quiz/modules/jeuxconcours/ManageQuiz.jsp</feature-url>
+        </admin-feature>
+    </admin-features>
+    
+    <!-- Portlet parameters -->
+    <portlets>
+        <portlet>
+            <portlet-class>fr.paris.lutece.plugins.quiz.modules.jeuxconcours.business.portlet.QuizPortletHome</portlet-class>
+            <portlet-type-id>QUIZ_PORTLET</portlet-type-id>
+            <portlet-type-name>module.quiz.jeuxconcours.portlet.name</portlet-type-name>
+            <portlet-creation-url>plugins/quiz/modules/jeuxconcours/CreatePortletQuiz.jsp</portlet-creation-url>
+            <portlet-update-url>plugins/quiz/modules/jeuxconcours/ModifyPortletQuiz.jsp</portlet-update-url>
+            <portlet-create-action-url>plugins/quiz/modules/jeuxconcours/DoCreatePortletQuiz.jsp</portlet-create-action-url>
+            <portlet-modify-action-url>plugins/quiz/modules/jeuxconcours/DoModifyPortletQuiz.jsp</portlet-modify-action-url>
+            <portlet-create-script-template>/admin/portlet/script_create_portlet.html</portlet-create-script-template>
+            <portlet-modify-script-template>/admin/portlet/script_modify_portlet.html</portlet-modify-script-template>
+            <portlet-create-specific-template>/admin/plugins/quiz/modules/jeuxconcours/portlet_quiz.html</portlet-create-specific-template>
+            <portlet-modify-specific-template>/admin/plugins/quiz/modules/jeuxconcours/portlet_quiz.html</portlet-modify-specific-template>
+            <portlet-create-specific-form-template/>
+            <portlet-modify-specific-form-template/>
+        </portlet>
+    </portlets>
+    
+</plug-in>
