@@ -11,7 +11,7 @@
 	<artifactId>module-quiz-games</artifactId>
 	<packaging>lutece-plugin</packaging>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>Lutece quiz module jeux concours</name>
+	<name>Lutece quiz games module</name>
 	
 	<repositories>
 		<repository>
