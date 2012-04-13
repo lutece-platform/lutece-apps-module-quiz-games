@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+
+<beans>
+	<bean id="quizPortletDAO"  class="fr.paris.lutece.plugins.quiz.modules.games.business.portlet.QuizPortletDAO" /> 
+    <bean id="quiz-games.participantDAO"  class="fr.paris.lutece.plugins.quiz.modules.games.business.QuizParticipantDAO" />
+    <bean id="quiz-games.randService" class="fr.paris.lutece.plugins.quiz.modules.games.service.RandService" />
+</beans>

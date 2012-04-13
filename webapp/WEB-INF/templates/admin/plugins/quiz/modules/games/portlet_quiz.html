@@ -1,0 +1,8 @@
+ <p>
+  <label for="id_quiz">#i18n{module.quiz.games.listQuiz.labelQuiz} * :</label>
+  <#if id_quiz?exists>
+     <@combo name="id_quiz"  items=quiz_list default_value=id_quiz/>
+  <#else>
+   	  <@combo name="id_quiz"  items=quiz_list default_value=-1 />
+   </#if>
+ </p>  	  

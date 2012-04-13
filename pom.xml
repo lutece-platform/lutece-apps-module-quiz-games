@@ -32,7 +32,7 @@
 	</dependencies>
 	
 	<properties>
-        <componentName>quiz-jeuxconcours</componentName>
+        <componentName>quiz-games</componentName>
         <jiraProjectName>QUIZJEUXCONCOURS</jiraProjectName>
         <jiraComponentId>10634</jiraComponentId>
     </properties>
