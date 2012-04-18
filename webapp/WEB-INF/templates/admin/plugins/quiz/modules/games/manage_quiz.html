@@ -1,3 +1,8 @@
+<div id="content-box-actions">
+	<form action="jsp/admin/plugins/quiz/modules/games/CreateQuiz.jsp">
+		<input type="submit" class="button bt-toolbar" value="#i18n{quiz.manage_quiz.buttonValueCreateQuiz}">
+	</form>
+</div>
 <div class="content-box" >
 	<h2>#i18n{quiz.manage_quiz.pageTitle}</h2>
 	<table>
@@ -33,7 +38,7 @@
                     </td>
                     <td>
                         <a href="jsp/admin/plugins/quiz/modules/games/ModifyQuiz.jsp?quiz_id=${quiz.idQuiz}"><img src="images/admin/skin/plugins/quiz/actions/modify.png"  alt="disable" title="Modifier" /></a>
-                        <a href="jsp/admin/plugins/quiz/ManageQuestions.jsp?quiz_id=${quiz.idQuiz}"><img src="images/admin/skin/plugins/quiz/actions/questions.png" alt="#i18n{quiz.manage_quiz.linkTitleManageQuestions}" title="#i18n{quiz.manage_quiz.linkTitleManageQuestions}" /></a>
+                        <a href="jsp/admin/plugins/quiz/modules/games/ManageQuestions.jsp?quiz_id=${quiz.idQuiz}"><img src="images/admin/skin/plugins/quiz/actions/questions.png" alt="#i18n{quiz.manage_quiz.linkTitleManageQuestions}" title="#i18n{quiz.manage_quiz.linkTitleManageQuestions}" /></a>
                         <a href="jsp/admin/plugins/quiz/modules/games/RandList.jsp?quiz_id=${quiz.idQuiz}"><img src="images/admin/skin/plugins/quiz/modules/games/rand.png" alt="#i18n{module.quiz.games.manage_quiz.linkTitleRand}" title="#i18n{module.quiz.games.manage_quiz.linkTitleRand}" /></a>
                         <#if quiz.enabled>
                             <a alt="#i18n{quiz.manage_quiz.linkTitleUnDisplayQuiz}"  title="#i18n{quiz.manage_quiz.linkTitleUnDisplayQuiz}" href="jsp/admin/plugins/quiz/modules/games/DoDisplayQuiz.jsp?quiz_id=${quiz.idQuiz}"><img src="images/admin/skin/plugins/quiz/actions/disable.png" alt="#i18n{quiz.manage_quiz.linkTitleUnDisplayQuiz}"/></a>
@@ -46,7 +51,4 @@
                 </#list>
             </tbody>
 	</table>
-	<form action="jsp/admin/plugins/quiz/CreateQuiz.jsp">
-            <input type="submit" value="#i18n{quiz.manage_quiz.buttonValueCreateQuiz}">
-	</form>
 </div>

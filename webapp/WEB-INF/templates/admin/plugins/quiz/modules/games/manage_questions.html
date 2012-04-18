@@ -1,0 +1,27 @@
+<div id="content-box-actions">
+	<form action="jsp/admin/plugins/quiz/modules/games/CreateQuestion.jsp">
+            <input type="submit" class="button bt-toolbar" name="#i18n{quiz.manage_questions.buttonValueCreateQuestion}" value="#i18n{quiz.manage_questions.buttonValueCreateQuestion}" />
+            <input type="hidden" id="quiz_id" name="quiz_id" value="${quiz.idQuiz}"/>
+	</form>
+</div>
+<div class="content-box" >
+	<h2>#i18n{quiz.manage_questions.pageTitle} ${quiz.name}</h2>
+        <table>
+            <tbody>
+                <th>#i18n{module.quiz.games.manage_questions.columnTitleName}</th>
+                <th>#i18n{quiz.manage_questions.columnTitleAction}</th>
+
+                 <#list questions_list as question>
+                    <tr>
+                        <td>
+                            <a href="jsp/admin/plugins/quiz/modules/games/ModifyQuestion.jsp?quiz_id=${quiz.idQuiz}&question_id=${question.idQuestion}" alt="#i18n{quiz.manage_questions.linkTitleModifyQuestion}"  title="#i18n{quiz.manage_questions.linkTitleModifyQuestion}" class="bullet-link"  alt="">&nbsp;&nbsp;${question.questionLabel}</a>
+                        </td>
+                        <td>
+                            <a href="jsp/admin/plugins/quiz/modules/games/ModifyQuestion.jsp?quiz_id=${quiz.idQuiz}&question_id=${question.idQuestion}"><img src="images/admin/skin/plugins/quiz/actions/modify.png"  alt="disable" title="Modifier" /></a>
+                            <a alt="#i18n{quiz.manage_question.linkTitleDeleteQuestion}"  title="#i18n{quiz.manage_question.linkTitleDeleteQuestion}" href="jsp/admin/plugins/quiz/modules/games/RemoveQuestion.jsp?quiz_id=${quiz.idQuiz}&question_id=${question.idQuestion}"><img src="images/admin/skin/actions/delete.png" alt="#i18n{quiz.manage_question.linkTitleDeleteQuestion}"/></a>
+                        </td>
+                    </tr>
+                </#list>
+            </tbody>
+	</table>
+</div>

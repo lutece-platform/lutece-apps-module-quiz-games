@@ -1,4 +1,4 @@
-<%@ page errorPage="../../ErrorPage.jsp" %>
+<%@ page errorPage="../../../../ErrorPage.jsp" %>
 
 <jsp:useBean id="rand" scope="session" class="fr.paris.lutece.plugins.quiz.modules.games.web.RandJspBean" />
 
