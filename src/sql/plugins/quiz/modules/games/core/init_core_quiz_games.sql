@@ -30,3 +30,6 @@ INSERT INTO core_admin_right (id_right,name,level_right,admin_url,description,is
 
 INSERT INTO core_user_right (id_right,id_user) VALUES ('QUIZ_MANAGEMENT_GAMES',1);
 INSERT INTO core_user_right (id_right,id_user) VALUES('QUIZ_MANAGEMENT_GAMES',2);
+
+/* Change url of admin feature plugin quizz */
+UPDATE core_admin_right set admin_url='jsp/admin/plugins/quiz/modules/games/ManageQuiz.jsp' WHERE id_right = 'QUIZ_MANAGEMENT';

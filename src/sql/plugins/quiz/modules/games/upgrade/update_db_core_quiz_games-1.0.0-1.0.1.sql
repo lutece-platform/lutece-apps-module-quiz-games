@@ -21,3 +21,5 @@ WHERE id_right='QUIZ_MANAGEMENT_JUEXCONCOURS';
 
 
 UPDATE core_user_right SET id_right='QUIZ_MANAGEMENT_GAMES' WHERE id_right='QUIZ_MANAGEMENT_JEUXCONCOURS';
+/* Change url of admin feature plugin quizz */
+UPDATE core_admin_right set admin_url='jsp/admin/plugins/quiz/modules/games/ManageQuiz.jsp' WHERE id_right = 'QUIZ_MANAGEMENT';
