@@ -2,7 +2,7 @@
 
     <name>quiz-games</name>
     <class>fr.paris.lutece.portal.service.plugin.PluginDefaultImplementation</class>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
     <description>module.quiz.games.module.description</description>
     <documentation/>
     <installation/>
