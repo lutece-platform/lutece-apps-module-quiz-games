@@ -21,4 +21,4 @@ CREATE TABLE IF NOT EXISTS `quiz_portlet` (
   `id_portlet` int(11) NOT NULL DEFAULT '0',
   `quiz` int(11) DEFAULT NULL,
   PRIMARY KEY (`id_portlet`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
