@@ -26,8 +26,8 @@
     <admin-features>
         <admin-feature>
             <feature-id>QUIZ_MANAGEMENT_GAMES</feature-id>
-            <feature-title>modules.quiz.games.adminFeature.quiz_management.name</feature-title>
-            <feature-description>modules.quiz.games.adminFeature.quiz_management.description</feature-description>
+            <feature-title>module.quiz.games.adminFeature.quiz_management.name</feature-title>
+            <feature-description>module.quiz.games.adminFeature.quiz_management.description</feature-description>
             <feature-level>3</feature-level>
             <feature-url>jsp/admin/plugins/quiz/modules/games/ManageQuiz.jsp</feature-url>
         </admin-feature>
