@@ -67,10 +67,12 @@ import org.apache.commons.lang.StringUtils;
 
 
 /**
- * This class provides the user interface to manage quiz features ( manage, create, modify, remove)
+ * This class provides the user interface to manage quiz features ( manage,
+ * create, modify, remove)
  */
 public class RandJspBean extends QuizJspBean
 {
+    private static final long serialVersionUID = 8191245123673411012L;
     // Properties for page titles
     private static final String PROPERTY_PAGE_TITLE_RAND_LIST = "module.quiz.games.rand_list.pageTitle";
     private static final String PROPERTY_PAGE_TITLE_MANAGE_QUIZ = "quiz.manage_quiz.pageTitle";
@@ -135,8 +137,7 @@ public class RandJspBean extends QuizJspBean
     private static final String JSP_URL_MANAGE_QUESTIONS = "ManageQuestions.jsp";
     private static final String JSP_URL_MODIFY_QUESTION = "ModifyQuestion.jsp";
 
-    private final RandService _randService = (RandService) SpringContextService.getContext( ).getBean(
-            RandService.class );
+    private final RandService _randService = SpringContextService.getContext( ).getBean( RandService.class );
 
     /**
      * Returns quiz management form
@@ -311,7 +312,6 @@ public class RandJspBean extends QuizJspBean
      * @param request The HTTP request
      * @return The page
      */
-    @Override
     public String getManageQuestions( HttpServletRequest request )
     {
         setPageTitleProperty( PROPERTY_PAGE_TITLE_MANAGE_QUESTIONS );
@@ -336,7 +336,6 @@ public class RandJspBean extends QuizJspBean
      * @param request The Http request
      * @return Html creation form
      */
-    @Override
     public String getCreateQuizQuestion( HttpServletRequest request )
     {
         setPageTitleProperty( PROPERTY_PAGE_TITLE_CREATE_QUESTION );
@@ -360,7 +359,6 @@ public class RandJspBean extends QuizJspBean
      * @param request The Http request
      * @return URL
      */
-    @Override
     public String doCreateQuizQuestion( HttpServletRequest request )
     {
         // Mandatory field
@@ -396,7 +394,6 @@ public class RandJspBean extends QuizJspBean
      * @param request The Http request
      * @return Html form
      */
-    @Override
     public String getModifyQuizQuestion( HttpServletRequest request )
     {
         int nIdQuiz = Integer.parseInt( request.getParameter( PARAMETER_QUIZ_ID ) );
@@ -423,7 +420,6 @@ public class RandJspBean extends QuizJspBean
      * @param request The Http request
      * @return The Jsp URL of the process result
      */
-    @Override
     public String doModifyQuizQuestion( HttpServletRequest request )
     {
         int nIdQuiz = Integer.parseInt( request.getParameter( PARAMETER_QUIZ_ID ) );
@@ -496,10 +492,8 @@ public class RandJspBean extends QuizJspBean
                     nbWinValid = false;
                     String[] args = new String[1];
                     args[0] = String.valueOf( listValidParticipant.size( ) );
-                    model.put(
-                            MARK_ERROR,
-                            I18nService.getLocalizedString( MESSAGE_NB_WIN_SUPERIOR_TO_NB_VALID_PARTICIPANT, args ,
-                                    request.getLocale( ) ) );
+                    model.put( MARK_ERROR, I18nService.getLocalizedString(
+                            MESSAGE_NB_WIN_SUPERIOR_TO_NB_VALID_PARTICIPANT, args, request.getLocale( ) ) );
                 }
                 if ( nbWinValid )
                 {
