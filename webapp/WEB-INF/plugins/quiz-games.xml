@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?><plug-in>
+<?xml version="1.0" encoding="UTF-8"?><plug-in>
 
     <name>quiz-games</name>
     <class>fr.paris.lutece.portal.service.plugin.PluginDefaultImplementation</class>
-    <version>1.0.3</version>
+    <version>2.0.0</version>
     <description>module.quiz.games.module.description</description>
     <documentation/>
     <installation/>
